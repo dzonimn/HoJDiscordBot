@@ -3,6 +3,9 @@ uuid = "42fb53df-40ee-4e29-8106-37b6ed24e788"
 authors = ["dzonimn <imnwby@outlook.com> and contributors"]
 version = "0.1.0"
 
+[deps]
+Discord = "fcbf000d-02fd-53f1-af91-d952191673d3"
+
 [compat]
 julia = "1"
 
