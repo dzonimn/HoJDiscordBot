@@ -6,8 +6,10 @@ I'm not actually sure what are the intended features of the bot, so any function
 The documentation can be found at https://posts.xh4h.com/Discord.jl/dev. The documentation contains a lot of information that could be helpful to do what we need.
 
 ## General notes
-- Obtain the API key for the Discord Bot. More information at https://discordpy.readthedocs.io/en/latest/discord.html. The bot must receive authorization by the server creator to be able to be in it and listen.
-  - Once that is done, insert it in `secrets/BotToken.txt` and one can run the bot from the root directory with `julia -p src/HoJDiscordBot.jl`.
+- Obtain the API key for the Discord Bot. 
+  - More information at https://discordpy.readthedocs.io/en/latest/discord.html. 
+  - The bot must receive authorization by the server creator to be able to be in it and listen.
+  - Once that is done, insert it in `secrets/BotToken.txt` and one can run the bot from the root directory with `julia --project src/HoJDiscordBot.jl`.
 - Use `add_handler!()` and `add_command!()` in `src/HoJDiscordBot.jl` and create methods within their respective files (`handlers.jl` or `commands.jl`) to extend the bot's capabilities.
   - `handlers` are events that happen in a server. The bot listens to all relevant `AbstractEvent`s and runs function(s) that deal with it.
   - `commands` are user commands that are typed by users. By default, the prefix has been set to `!`.
