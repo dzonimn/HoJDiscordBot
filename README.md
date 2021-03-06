@@ -3,7 +3,7 @@ This repo serves as a template for the Humans of Julia Discord bot. Fork and tai
 
 I'm not actually sure what are the intended features of the bot, so any functions already defined within are just examples.
 
-The documentation can be found at https://posts.xh4h.com/Discord.jl/dev.
+The documentation can be found at https://posts.xh4h.com/Discord.jl/dev. The documentation contains a lot of information that could be helpful to do what we need.
 
 ## General notes
 - Obtain the API key for the Discord Bot. More information at https://discordpy.readthedocs.io/en/latest/discord.html. The bot must receive authorization by the server creator to be able to be in it and listen.
@@ -20,4 +20,3 @@ end
 
 ## Issues
 - The only way I can figure out how to handle data is to use `const`s within their respective files, and/or to maintain a database somewhere. Currently I'm not sure how this should be best implemented, but feel free to refactor it when a proper solution is found.
-- The documentation contains a lot of information that could be helpful to do what we need.

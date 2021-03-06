@@ -27,7 +27,7 @@ function main()
     # example: add_command!(client, :commandname, function)
     # https://posts.xh4h.com/Discord.jl/dev/client/#Discord.add_command!
     add_command!(client, :ping, replypong; help="Replies pong")
-    add_command!(client, :pong, replyping; help="Replies pong")
+    add_command!(client, :pong, replyping; help="Replies ping")
     add_command!(client, :top, replyworkleaderboard; help="Shows top workers")
     add_command!(client, :work, workcontroller; help="Start work")
 
