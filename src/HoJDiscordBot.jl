@@ -31,19 +31,16 @@ function main()
     add_command!(client, :top, replyworkleaderboard; help="Shows top workers")
     add_command!(client, :work, workcontroller; help="Start work")
 
-     # I forget how 55 seconds came to be but I felt it gave Julia enough time to compile or something
-    @sync open(client, delay=Second(55))
     return client
 end
 
 end
 
-
+client = HoJDiscordBot.main()
 while true
     @info "Bot starting up"
-    client = HoJDiscordBot.main()
-    @info "Bot logging in"
+    open(client)
     wait(client)
-    # not too sure if this actually works in preventing lost connections yet
+    isopen(c) && close(c)
     @info "Lost connection to Discord, restarting bot."
 end
